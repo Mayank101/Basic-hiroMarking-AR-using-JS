@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+    <script>THREEx.ArTookkitContext.baseURL = 'https://cdn.rawgit.com/jeromeetienne/AR.js/master/three.js'</script>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>AR.js in Browser</title>
+</head>
+<body>
+    <a-scene embedded artoolkit='sourceType:webcam;'>
+        <!-- 3-d content goes here -->
+        <a-box position='0 0.5 0' material='opacity: 0.5'></a-box>
+        <a-marker-camera preset='hiro'></a-marker-camera>
+    </a-scene>
+    
+</body>
+</html>
